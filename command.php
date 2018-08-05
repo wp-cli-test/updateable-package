@@ -10,6 +10,6 @@ if ( ! class_exists( 'WP_CLI' ) ) {
  * @when before_wp_load
  */
 $hello_world_command = function() {
-	WP_CLI::success( "V1" );
+	WP_CLI::success( "V2" );
 };
-WP_CLI::add_command( 'updateable-package v1', $hello_world_command );
+WP_CLI::add_command( 'updateable-package v2', $hello_world_command );
